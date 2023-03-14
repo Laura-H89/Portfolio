@@ -10,19 +10,22 @@ body {
   font-size: 1em;
   background-color: white;
   margin: 0;
-  padding: 0;
 }
 
 h1 {
   color: #453E4F;
   font-family: 'Alike', sans-serif;
   padding-bottom: 30px;
+  line-height: 1.5;
+  font-size: 1.75rem;
 }
 
 h2 {
   color: #453E4F;
   font-family: 'Alike', sans-serif;
-  margin-top: 30px;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-weight: 400;
 }
 
 h3 {
@@ -45,25 +48,70 @@ p {
   font-family: 'Alike', sans-serif;
   font-weight: ;
   line-height: ;
-  margin: #;
+  margin: ;
 }
 
-
-/***** HEADER *****/
-.content-wrapper {
-  text-align: center;
+figure {
   display: flex;
   justify-content: center;
-  flex-flow: row wrap;
+  margin: 30px 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/***** HEADER *****/
+header {
+  padding-top: 60px;
+  padding-bottom: 80px;
   background-color: #F19494;
 }
 
-nav {
+header .content-wrapper {
+  text-align: center;
   display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  width: 85%;
+}
+
+div {
+  display: block;
+}
+
+nav {
+  display: block;
   justify-content: center;
   width: 100%;
   text-transform: uppercase;
 }
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li  {
+  font-size: .75rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #453E4F;
+  font-family: 'Alike', sans-serif;
+  line-height: 1.5;
+  display: list-item;
+  justify-content: space-around;
+}
+
+header h1 {
+  width: 100%;
+}
+
 /***** PROJECTS *****/
 
 /***** SKILLS *****/
