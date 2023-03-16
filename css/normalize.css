@@ -29,36 +29,37 @@ h2 {
 }
 
 h3 {
-  color: #453E4F
-  font-size: ;
+  color: #453E4F;
+  font-size: 1.75rem;
   font-family: 'Alike', sans-serif;
-  margin-top: ;
-  margin-bottom: ;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 h4 {
   color: #453E4F;
   font-family: 'Alike', sans-serif;
-  font-size: ;
-  margin-bottom: ;
+  font-size: 1.25rem;
+  margin: 0 0 40px 0;
 }
 
 p {
   color: #453E4F;
   font-family: 'Alike', sans-serif;
-  font-weight: ;
-  line-height: ;
-  margin: ;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 figure {
   display: flex;
   justify-content: center;
-  margin: 30px 0;
+  margin: 20px 0 40px 0;
 }
 
 img {
   max-width: 100%;
+  border-style: none;
+  vertical-align: middle;
 }
 
 /***** HEADER *****/
@@ -112,12 +113,81 @@ header h1 {
   width: 100%;
 }
 
+/* review */
+header, #work, #skills, #about, footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
 /***** PROJECTS *****/
+main {
+  display: block;
+}
+
+article {
+  display: block;
+}
+
+#projects {
+  padding-top: 60px;
+  width: 100%;
+}
+
+#projects #skills {
+  width: 100%;
+}
+
+#projects .content-wrapper{
+  width: 85%;
+}
+
+.projects-header{
+  text-align: center;
+}
+
+.portfolio-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.portfolio-piece {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-piece figure {
+  width: 100%;
+  filter: drop-shadow(1px 2px 6px lightgrey);
+}
+
+.portfolio-piece h4 {
+  font-weight: bold;
+}
+
+.project-description {
+  margin: 00 30px 0;
+}
+
+#projects p, #about p {
+  width: 100%;
+  text-align: left;
+}
 
 /***** SKILLS *****/
-
+#skills {
+  background-color: #F19494;
+}
 /***** ABOUT *****/
-
+footer {
+  background-color: #F19494;
+}
 /***** CONTACT *****/
 
 /* ==========================================================================
@@ -127,7 +197,15 @@ header h1 {
    ========================================================================== */
 
    /********** TABLET STYLES **********/
-   
+@media only screen and (min-width: 768px) {
+/***** GENERAL *****/
+.content-wrapper {
+  max-width: 640px;
+}
+
+a {
+  font-size: 1.25rem;
+}
 
 
 /*.content-wrapper {
