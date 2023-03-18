@@ -12,12 +12,16 @@ body {
   margin: 0;
 }
 
+h1, h2, h3, h4, h4, h6 {
+  margin: 0;
+}
+
 h1 {
   color: #453E4F;
   font-family: 'Alike', sans-serif;
-  padding-bottom: 30px;
   line-height: 1.5;
   font-size: 1.75rem;
+  width: 100%;
 }
 
 h2 {
@@ -62,10 +66,16 @@ img {
   vertical-align: middle;
 }
 
+.content-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
 /***** HEADER *****/
 header {
-  padding-top: 60px;
-  padding-bottom: 80px;
+  padding-top: 30px;
+  padding-bottom: 60px;
   background-color: #F19494;
 }
 
@@ -84,17 +94,20 @@ div {
 nav {
   display: block;
   justify-content: center;
-  width: 100%;
+  text-align: center;
   text-transform: uppercase;
+  margin-bottom: 60px;
 }
 
 nav ul {
   display: flex;
   justify-content: space-between;
-  width: 80%;
   list-style-type: none;
-  margin: 0;
   padding: 0;
+}
+
+li {
+  display: list-item;
 }
 
 header nav ul li  {
@@ -105,12 +118,16 @@ header nav ul li  {
   color: #453E4F;
   font-family: 'Alike', sans-serif;
   line-height: 1.5;
-  display: list-item;
   justify-content: space-around;
 }
 
 header h1 {
   width: 100%;
+}
+
+header h2 {
+  width: 100%;
+  margin-top: 60 px;
 }
 
 /* review */
