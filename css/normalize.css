@@ -6,7 +6,7 @@ html {
 
 /* Basic styles */
 body {
-  font-family:'Alike', sans-serif;
+  font-family:'Open Sans', sans-serif;
   font-size: 1em;
   background-color: white;
   margin: 0;
@@ -14,6 +14,12 @@ body {
 
 h1, h2, h3, h4, h4, h6 {
   margin: 0;
+}
+
+h3, h4, h5, h6 {
+  width: 100%;
+  font-family: 'Alike', sans-serif;
+  line-height: 1.5;
 }
 
 h1 {
@@ -49,9 +55,9 @@ h4 {
 
 p {
   color: #453E4F;
-  font-family: 'Alike', sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  margin: 0;
 }
 
 figure {
@@ -70,6 +76,23 @@ img {
   width: 1200px;
   margin: 0 auto;
   overflow: auto;
+}
+
+header, #work, #skills, #about, footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+
+span {
+  font-weight: bold;
+}
+
+a {
+  font-size: 1.25rem;
+  text-decoration: none;
+  background-color: transparent;
 }
 
 /***** HEADER *****/
@@ -95,7 +118,6 @@ nav {
   display: block;
   justify-content: center;
   text-align: center;
-  text-transform: uppercase;
   margin-bottom: 60px;
 }
 
@@ -115,10 +137,19 @@ header nav ul li  {
   margin-bottom: 20px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+header nav ul li a {
+  font-size: .75rem;
+  text-decoration: none;
   color: #453E4F;
-  font-family: 'Alike', sans-serif;
-  line-height: 1.5;
-  justify-content: space-around;
+  background-color: transparent;
+}
+
+nav #contact-link {
+  background-color: #FFE8D6;
+  padding: 10px 10px;
+  border-radius: 30px;
 }
 
 header h1 {
@@ -127,16 +158,9 @@ header h1 {
 
 header h2 {
   width: 100%;
-  margin-top: 60 px;
+  margin-top: 60px;
 }
 
-/* review */
-header, #work, #skills, #about, footer {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-flow: row wrap;
-}
 
 /***** PROJECTS *****/
 main {
@@ -186,10 +210,11 @@ article {
 
 .portfolio-piece h4 {
   font-weight: bold;
+  text-align: center;
 }
 
 .project-description {
-  margin: 00 30px 0;
+  margin: 0 0 30px 0;
 }
 
 #projects p, #about p {
@@ -197,10 +222,25 @@ article {
   text-align: left;
 }
 
+.project-link {
+  background-color: #453E4F;
+  padding: 0.75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+  margin: 40px 0 60px 0;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+}
+
 /***** SKILLS *****/
 #skills {
   background-color: #F19494;
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
+
+
 /***** ABOUT *****/
 footer {
   background-color: #F19494;
@@ -218,10 +258,6 @@ footer {
 /***** GENERAL *****/
 .content-wrapper {
   max-width: 640px;
-}
-
-a {
-  font-size: 1.25rem;
 }
 
 
