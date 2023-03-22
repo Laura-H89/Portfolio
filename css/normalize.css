@@ -100,6 +100,7 @@ a {
   font-size: 1.25rem;
   text-decoration: none;
   background-color: transparent;
+  color: #453E4F;
 }
 
 /***** HEADER *****/
@@ -344,6 +345,7 @@ footer .contact-info {
 .social-icons {
   display: flex;
   justify-content: space-around;
+  color:#453E4F
 }
 
 .social-icons li {
