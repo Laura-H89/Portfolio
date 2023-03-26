@@ -100,6 +100,7 @@ a {
   font-size: 1.25rem;
   text-decoration: none;
   background-color: transparent;
+  color: #453E4F;
 }
 
 /***** HEADER *****/
@@ -344,6 +345,7 @@ footer .contact-info {
 .social-icons {
   display: flex;
   justify-content: space-around;
+  color: #453E4F;
 }
 
 .social-icons li {
@@ -481,7 +483,7 @@ footer .contact-info {
 }
 
 
-
+/********** DESKTOP STYLES **********/
 @media only screen and (min-width: 1200px) {
   header {
     padding-top: 80px;
