@@ -6,17 +6,25 @@ html {
 
 /* Basic styles */
 body {
-  font-family:'Open Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   background-color: white;
   margin: 0;
 }
 
-h1, h2, h3, h4, h4, h6 {
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
   margin: 0;
 }
 
-h3, h4, h5, h6 {
+h3,
+h4,
+h5,
+h6 {
   width: 100%;
   font-family: 'Alike', sans-serif;
   line-height: 1.5;
@@ -62,7 +70,8 @@ p {
   margin: 0;
 }
 
-p, li {
+p,
+li {
   font-size: 1rem;
   line-height: 1.5;
 }
@@ -80,12 +89,16 @@ img {
 }
 
 .content-wrapper {
-  width: 1200px;
+  width: 85%;
   margin: 0 auto;
   overflow: auto;
 }
 
-header, #work, #skills, #about, footer {
+header,
+#work,
+#skills,
+#about,
+footer {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -144,7 +157,7 @@ li {
   display: list-item;
 }
 
-header nav ul li  {
+header nav ul li {
   font-size: .75rem;
   margin-bottom: 20px;
   font-weight: bold;
@@ -183,6 +196,10 @@ article {
   display: block;
 }
 
+#work {
+  padding-top: 60px;
+}
+
 #projects {
   padding-top: 60px;
   width: 100%;
@@ -192,11 +209,11 @@ article {
   width: 100%;
 }
 
-#projects .content-wrapper{
+#projects .content-wrapper {
   width: 85%;
 }
 
-.projects-header{
+.projects-header {
   text-align: center;
 }
 
@@ -231,7 +248,8 @@ article {
   margin: 0 0 30px 0;
 }
 
-#projects p, #about p {
+#projects p,
+#about p {
   width: 100%;
   text-align: left;
 }
@@ -267,7 +285,8 @@ article {
   font-weight: bold;
 }
 
-.language-wrapper p, .tool-wrapper p {
+.language-wrapper p,
+.tool-wrapper p {
   background-color: #FFE8D6;
   padding: 15px 0;
   margin: 20px 0;
@@ -288,10 +307,6 @@ article {
   width: 85%;
 }
 
-figure {
-  margin: 20px 0 40px 0;
-}
-
 .about-info h3 {
   margin: 40px 0 40px 0;
 }
@@ -310,7 +325,7 @@ footer {
   padding: 80px 0;
 }
 
-#contact .content-wrapper{
+#contact .content-wrapper {
   width: 85%;
 }
 
@@ -368,7 +383,7 @@ footer ul {
    Modify as content requires.
    ========================================================================== */
 
-   /********** TABLET STYLES **********/
+/********** TABLET STYLES **********/
 @media only screen and (min-width: 768px) {
   header {
     padding-top: 60px;
@@ -407,81 +422,99 @@ footer ul {
     font-size: 1rem;
   }
 
-.content-wrapper {
-  max-width: 640px;
-}  
+  .content-wrapper {
+    max-width: 640px;
+  }
 
-#skills {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-.portfolio-wrapper {
-  justify-content: space-around;
-}
+  #projects {
+    padding-top: 80px;
+  }
 
-.project-description {
-  width: 95%;
-  margin: 0 0 30px 0;
-}
-.portfolio-piece {
-  align-items: center;
-}
+  #skills {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 
-.language-wrapper, .tool-wrapper {
-  display: flex;
-  justify-content: space-evenly;
-  width: 100%;
-  flex-flow: row wrap;
-  text-transform: uppercase;
-}
+  #work, #skills {
+    width: 100%;
+  }
 
-.language-wrapper p, .tool-wrapper p {
-  font-size: 1rem;
-}
+  .portfolio-wrapper {
+    justify-content: space-around;
+  }
 
-#about {
-  padding: 80px 0;
-}
+  .project-description {
+    width: 95%;
+    margin: 0 0 30px 0;
+  }
 
-.about-wrapper {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
+  .portfolio-piece {
+    align-items: center;
+    width: 45%;
+  }
 
-.about-info h4 {
-  text-align: left;
-  margin: 0 0 60px 0;
-}
+  .portfolio-piece figure {
+    width: 100%;
+    align-items: center;
+  }
 
-.about-text {
-  margin: 0 0 30px 0;
-}
+  .language-wrapper,
+  .tool-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+  }
 
-footer {
-  padding-bottom: 140px;
-}
+  .language-wrapper p,
+  .tool-wrapper p {
+    font-size: 1rem;
+  }
 
-footer .content-wrapper {
-  max-width: 640px;
-}
+  #about {
+    padding: 80px 0;
+  }
 
-h3 {
-  font-size: 2rem;
-}
+  .about-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
 
-.contact-wrapper {
-  display: flex;
-  justify-content: space-between;
-}
+  .about-info h4 {
+    text-align: left;
+    margin: 0 0 60px 0;
+  }
 
-.contact-info {
-  margin: 80px 0;
-}
+  .about-text {
+    margin: 0 0 30px 0;
+  }
 
-footer .contact-info {
-  width: 33%;
-}
+  footer {
+    padding-bottom: 140px;
+  }
+
+  footer .content-wrapper {
+    max-width: 640px;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .contact-info {
+    margin: 80px 0;
+  }
+
+  footer .contact-info {
+    width: 33%;
+  }
 }
 
 
@@ -491,6 +524,7 @@ footer .contact-info {
     padding-top: 80px;
     padding-bottom: 140px;
   }
+
   h1 {
     font-size: 4rem;
   }
@@ -530,18 +564,27 @@ footer .contact-info {
     max-width: 900px;
   }
 
-  .language, .tool {
+  .language,
+  .tool {
     width: 30%;
   }
 
   .project-description {
     margin: 0 0 30px 0;
   }
+
   .portfolio-piece {
     width: 30%;
   }
 
-  .project-link, .language-wrapper p, .tool-wrapper p {
+  .portfolio-piece figure {
+    width: 100%;
+    height: 200px;
+  }
+
+  .project-link,
+  .language-wrapper p,
+  .tool-wrapper p {
     font-size: 1rem;
   }
 
@@ -558,7 +601,7 @@ footer .contact-info {
   .about-info {
     width: 50%;
   }
-  
+
   .about-info h4 {
     margin: 40px 0;
     font-size: 2rem;
